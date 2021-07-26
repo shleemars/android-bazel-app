@@ -1,0 +1,2 @@
+build --verbose_failures
+build --incompatible_use_python_toolchains=false
