@@ -41,12 +41,14 @@ http_archive(
 
 android_sdk_repository(
     name = "androidsdk",
-    api_level = 29
+    api_level = 29,
+#    path =
 )
 
 android_ndk_repository(
     name = "androidndk",
-    api_level = 21
+    api_level = 21,
+#    path =
 )
 
 register_toolchains("@androidndk//:all")
