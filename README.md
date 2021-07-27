@@ -18,7 +18,7 @@ $ adb install bazel-bin/app/src/main/app.apk
 $ bazel mobile-install --start_app --fat_apk_cpu=arm64-v8a //app/src/main:app
 ```
 
-- If you are a MacOS user, you need install the `futures` package. 
+If you are a MacOS user, you need install the `futures` package. 
 ```shell
 $ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 $ python get-pip.py
