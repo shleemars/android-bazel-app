@@ -3,24 +3,39 @@
 Template for Android App with Bazel build system.
 
 ## Instructions
+- Install JRE or JDK
 - Install Android SDK Build-Tools 29, Android NDK
 - Edit WORKSPACE file, add android_sdk_repository path and android_ndk_repository path
 - Install Bazel 4.1.0 or Bazelisk 
 
 ## Build
+If you want to build only
 ```shell
-$ bazel build --fat_apk_cpu=arm64-v8a //app/src/main:app
-$ adb install bazel-bin/app/src/main/app.apk
+bazel build --fat_apk_cpu=arm64-v8a //app/src/main:app
 ```
 
-## Using mobile-install
+You can install the app using `adb`
 ```shell
-$ bazel mobile-install --start_app --fat_apk_cpu=arm64-v8a //app/src/main:app
+adb install bazel-bin/app/src/main/app.apk
 ```
 
-If you are a MacOS user, you need to install the `futures` package. 
+## Build & Install & Run `mobile-install`
+You can build & install & run the app with single command `mobile-install`
+
 ```shell
-$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-$ python get-pip.py
-$ python -m pip install futures
+bazel mobile-install --start_app --fat_apk_cpu=arm64-v8a //app/src/main:app
+```
+
+## Issues
+### missing package `futures` on MacOS
+If you get a error that the `futures` package is missing, you need to install the `futures` package. But MacOS doesn't have `pip` for python2.7, you need to install `pip` for python2.7 at first.
+
+Install pip for python2 
+```shell
+curl -fsSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | python -
+```
+
+Install `futures` package 
+```shell
+python -m pip install futures
 ```
