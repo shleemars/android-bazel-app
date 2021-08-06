@@ -3,6 +3,18 @@
 Template for Android App with Bazel build system.
 
 ## Instructions
+- (MacOS) Install developer's tools
+```shell
+xcode-select --install
+```
+- (MacOS) Install HomeBrew and Python
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+```shell
+brew install python
+```
+
 - Install JRE or JDK
   - Install `default-jdk` on Ubuntu 20.04  
 - Install Android SDK Build-Tools 29, Android NDK
