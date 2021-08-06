@@ -4,9 +4,12 @@ Template for Android App with Bazel build system.
 
 ## Instructions
 - Install JRE or JDK
+  - Install `default-jdk` on Ubuntu 20.04  
 - Install Android SDK Build-Tools 29, Android NDK
-- Edit WORKSPACE file, add android_sdk_repository path and android_ndk_repository path
-- Install Bazel 4.1.0 or Bazelisk 
+- Edit WORKSPACE file, modify `path` variables on android_sdk_repository, android_ndk_repository
+- Install `Bazelisk` or `Bazel` 4.1.0 (I prefer `Bazelisk`)
+- Install python
+  - Install `python-is-python3` on Ubuntu 20.04
 
 ## Build
 If you want to build only
