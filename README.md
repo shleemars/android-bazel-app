@@ -83,7 +83,7 @@ export ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk/21.4.7075529
 **MS-Windows**
 TODO
 
-If you prefer to editing `WORKSPACE` file, refer to https://docs.bazel.build/versions/main/be/android.html#android_sdk_repository and edit `android_sdk_repository`, `android_ndk_repository` path both.
+If you prefer to editing `WORKSPACE` file, refer to https://docs.bazel.build/versions/main/be/android.html#android_sdk_repository and edit `android_sdk_repository`, `android_ndk_repository` paths both.
 
 # Build
 Clone the project.
