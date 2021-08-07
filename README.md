@@ -66,7 +66,7 @@ With Android Studio, you can install the Android SDK as follows:
 3. In the **SDK Tools** tab, select **Android SDK Build-Tools 29.0.3**, **NDK (Side by side) 21.4.7075529**, **Android SDK Command-line Tools(latest)**
 4. Click **OK** to install the SDK
 
-Export `ANDROID_SDK`, `ANDROID_NDK_HOME` environment variables. The paths are depends on your configurations, following are just typical path.
+Export `ANDROID_SDK`, `ANDROID_NDK_HOME` environment variables. The paths are depends on your configurations, followings are just typical path.
 
 **MacOS**
 ```shell
