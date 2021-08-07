@@ -10,42 +10,42 @@ To build Android application with bazel, followings are needed.
 - Bazelisk or Bazel 4.1.0
 
 ## Instructions for MacOS
-Install **developer's tools** (including toolchains)
+Install **developer's tools**. You can skip if you already installed Xcode.
 ```shell
 xcode-select --install
 ```
 
-Install **Java Development Kit 11**
+Install **Java Development Kit 11**.
 - Azul OpenJDK https://www.azul.com/downloads/?package=jdk
 - Oracle JDK https://www.oracle.com/kr/java/technologies/javase-jdk11-downloads.html
 
-Install **pip** (You can skip if you already installed pip) 
+Install **pip**. You can skip if you already installed pip.
 ```shell
 curl -fsSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | python -
 ```
 
-Install Python **`futures`** packages
+Install Python **`futures`** packages.
 ```shell
 python -m pip install futures
 ```
 
-Install **HomeBrew**
+Install **HomeBrew**.
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Install **Bazelisk**
+Install **Bazelisk**.
 ```shell
 brew install bazelisk
 ```
 
 ## Instructions for Ubuntu 20.04
-Install **Java Development Kit 11**, **Go**, **Python**
+Install **Java Development Kit 11**, **Go**, **Python**.
 ```shell
 sudo apt-get install default-jdk golang python-is-python3
 ```
 
-Install **Bazelisk**
+Install **Bazelisk**.
 ```shell
 go get github.com/bazelbuild/bazelisk
 ```
@@ -84,7 +84,8 @@ export ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk/21.4.7075529
 TODO
 
 # Build
-Clone the source code
+Clone the project.
+
 ```shell
 git clone https://github.com/shleemars/android-bazel-app.git
 ```
@@ -92,13 +93,14 @@ git clone https://github.com/shleemars/android-bazel-app.git
 cd android-bazel-app
 ```
 
-Build project
+Build project.
+
 ```shell
 bazel build --fat_apk_cpu=arm64-v8a //app/src/main:app
 ```
 
 ## Build with `mobile-install`
-You can build & install & run the app with single command `mobile-install`
+You can build, install and run the app with single command `mobile-install`.
 
 ```shell
 bazel mobile-install --start_app --fat_apk_cpu=arm64-v8a //app/src/main:app
