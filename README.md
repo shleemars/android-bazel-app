@@ -67,26 +67,32 @@ With Android Studio, you can install the Android SDK as follows:
 4. Click **OK** to install the SDK
 
 Export `ANDROID_SDK`, `ANDROID_NDK_HOME` environment variables. The paths are depends on your configurations, following are just typical path.
+
 **MacOS**
 ```shell
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk/21.4.7075529
 ```
+
 **Ubuntu**
 ```shell
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/21.4.7075529
 ```
+
 **MS-Windows**
 TODO
 
 # Build
 Clone the source code
 ```shell
-git clone https://github.com/shleemars/android-bazel-app.git && cd android-bazel-app
+git clone https://github.com/shleemars/android-bazel-app.git
+```
+```shell
+cd android-bazel-app
 ```
 
-Build
+Build project
 ```shell
 bazel build --fat_apk_cpu=arm64-v8a //app/src/main:app
 ```
