@@ -71,7 +71,7 @@ Export `ANDROID_SDK`, `ANDROID_NDK_HOME` environment variables. The paths are de
 **MacOS**
 ```shell
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/21.4.7075529
+export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk/21.4.7075529
 ```
 
 **Ubuntu**
